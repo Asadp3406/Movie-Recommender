@@ -1,0 +1,41 @@
+═══════════════════════════════════════════════════════════
+   QUICK DEPLOYMENT GUIDE - COPY & PASTE THESE COMMANDS
+═══════════════════════════════════════════════════════════
+
+✅ Git is already initialized and committed!
+
+STEP 1: Create GitHub Repository
+─────────────────────────────────
+1. Go to: https://github.com/new
+2. Repository name: movie-recommender
+3. Make it PUBLIC
+4. Don't add README
+5. Click "Create repository"
+
+STEP 2: Push to GitHub
+─────────────────────────────────
+Copy your repository URL from GitHub, then run:
+
+git remote add origin https://github.com/YOUR_USERNAME/movie-recommender.git
+git push -u origin main
+
+(Replace YOUR_USERNAME with your actual GitHub username)
+
+STEP 3: Deploy on Streamlit Cloud
+─────────────────────────────────
+1. Go to: https://share.streamlit.io/
+2. Sign in with GitHub
+3. Click "New app"
+4. Select your repository: YOUR_USERNAME/movie-recommender
+5. Branch: main
+6. File: app.py
+7. Click "Deploy"
+
+DONE! Your app will be live in 2-5 minutes! 🚀
+
+Your app URL will be:
+https://YOUR_USERNAME-movie-recommender.streamlit.app
+
+═══════════════════════════════════════════════════════════
+
+Need detailed help? Read DEPLOYMENT_GUIDE.md
