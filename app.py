@@ -5,7 +5,10 @@ import time
 
 @st.cache_data(show_spinner=False)
 def fetch_poster(movie_id):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=2171b9b5556bd2747edf8e75b027aafe&language=en-US"
+    api_key = st.secrets.get("TMDB_API_KEY", "")
+    if not api_key:
+        return None
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US"
     
     for attempt in range(3):
         try:
